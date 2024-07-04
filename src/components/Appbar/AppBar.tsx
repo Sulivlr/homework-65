@@ -13,13 +13,13 @@ const Appbar: React.FC = () => {
             <NavLink to="/" className="nav-link">Home</NavLink>
           </li>
           <li className="nav-item">
-            <NavLink to="/about" className="nav-link">About</NavLink>
+            <NavLink to="/Modes/about" className="nav-link">Modes</NavLink>
           </li>
           <li className="nav-item">
-            <NavLink to="/contacts" className="nav-link">Contacts</NavLink>
+            <NavLink to="/Agents/agents" className="nav-link">Agents</NavLink>
           </li>
           <li className="nav-item">
-            <NavLink to="/divisions" className="nav-link">Divisions</NavLink>
+            <NavLink to="/info/info" className="nav-link">Info</NavLink>
           </li>
           <li className="nav-item">
             <NavLink to="/admin" className="nav-link">Admin</NavLink>
