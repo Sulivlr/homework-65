@@ -1,10 +1,10 @@
 import React, {useCallback, useEffect, useState} from 'react';
-import {ApiPage, ApiPages} from '../../types';
+import {ApiPages, Mode} from '../../types';
 import axiosApi from '../../axiosApi';
-import {Link,} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 const Home:React.FC = () => {
-  const [about, setAbout] = useState<ApiPage[]>([]);
+  const [about, setAbout] = useState<Mode[]>([]);
 
   const fetchAbouts = useCallback(async () => {
     const response = await axiosApi.get<ApiPages | null>('/pages.json');
@@ -31,7 +31,7 @@ const Home:React.FC = () => {
           <div className="card-body">
             <h6>{abouts.title}</h6>
 
-              <Link className="btn btn-primary m-2" to={'/modes/' + abouts.id}>About</Link>
+              <Link className="btn btn-primary m-2" to={`/modes/${abouts.id}`}>About</Link>
               <Link className="btn btn-success " to={`/edit-page/${abouts.id}`}>Edit Page</Link>
 
 
