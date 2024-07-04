@@ -32,7 +32,7 @@ const Home:React.FC = () => {
             <h6>{abouts.title}</h6>
 
               <Link className="btn btn-primary m-2" to={'/modes/' + abouts.id}>About</Link>
-              <Link className="btn btn-success " to={'/admin/' + abouts.id}>Edit Page</Link>
+              <Link className="btn btn-success " to={`/edit-page/${abouts.id}`}>Edit Page</Link>
 
 
           </div>

@@ -1,7 +1,6 @@
-import React from 'react';
 import Modes from '../Modes/Modes';
 
-const Agents = () => {
+const Info = () => {
   return (
     <div>
       <Modes />
@@ -9,4 +8,4 @@ const Agents = () => {
   );
 };
 
-export default Agents;
+export default Info;

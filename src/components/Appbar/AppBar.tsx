@@ -22,7 +22,7 @@ const Appbar: React.FC = () => {
             <NavLink to="/info/info" className="nav-link">Info</NavLink>
           </li>
           <li className="nav-item">
-            <NavLink to="/admin" className="nav-link">Admin</NavLink>
+            <NavLink to="/edit-page/about" className="nav-link">Admin</NavLink>
           </li>
         </ul>
       </div>
